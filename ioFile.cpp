@@ -31,4 +31,9 @@ int main(){
 	infile.open("ContohFile.txt");
 
 	cout << endl << ">= Membuka dan membaca file" << endl;
+
+	if (infile.is_open()) {
+
+	}
+	else cout << "unable to open file";
 }
