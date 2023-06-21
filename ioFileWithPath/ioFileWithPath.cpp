@@ -13,7 +13,7 @@ int main() {
 
 	ofstream outfile;
 	//open file
-	outfile.open(namafile+".txt");
+	outfile.open(namafile+".txt",ios::out);
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -31,7 +31,7 @@ int main() {
 	/*Read*/
 
 	ifstream infile;
-	infile.open(namafile + ".txt");
+	infile.open(namafile + ".txt",ios::in);
 
 	cout << endl << ">= Membuka dan membaca file" << endl;
 
