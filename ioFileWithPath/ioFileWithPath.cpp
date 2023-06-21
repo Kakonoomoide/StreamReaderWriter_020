@@ -8,9 +8,12 @@ int main() {
 
 	/*write*/
 
+	cout << "masukan nama filennya:";
+	cin >> namafile;
+
 	ofstream outfile;
 	//open file
-	outfile.open("ContohFile.txt");
+	outfile.open(namafile+".txt");
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -28,7 +31,7 @@ int main() {
 	/*Read*/
 
 	ifstream infile;
-	infile.open("ContohFile.txt");
+	infile.open(namafile + ".txt");
 
 	cout << endl << ">= Membuka dan membaca file" << endl;
 
@@ -36,6 +39,7 @@ int main() {
 		while (getline(infile, baris)) {
 			cout << baris << '\n';
 		}
+		infile.close();
 	}
 	else cout << "unable to open file";
 	return 0;
