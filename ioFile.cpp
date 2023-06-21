@@ -6,6 +6,8 @@ using namespace std;
 int main(){
 	string baris;
 
+	/*write*/
+
 	ofstream outfile;
 	//open file
 	outfile.open("ContohFile.txt");
@@ -22,4 +24,11 @@ int main(){
 	}
 
 	outfile.close();
+
+	/*Read*/
+
+	ifstream infile;
+	infile.open("ContohFile.txt");
+
+	cout << endl << ">= Membuka dan membaca file" << endl;
 }
